@@ -1,0 +1,23 @@
+###git push failed 500
+
+git push failed
+```
+git push origin master
+RPC failed  result=22 HTTP code = 500
+```
+
+possible reason:
+- git repo is too large
+
+
+    git config http.postBuffer 524288000
+
+    
+- git fack warning zeroPaddedFilemode
+
+see solution [1] , [2]
+
+    git fast-export --all | (cd /newrepo && git fast-import)
+
+  [1]:http://stackoverflow.com/questions/4864740/github-repo-corruption-sha1-collision
+  [2]:http://stackoverflow.com/questions/14700502/how-to-fix-git-zero-padded-file-modes-warning
