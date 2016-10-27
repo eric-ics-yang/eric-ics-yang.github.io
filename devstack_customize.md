@@ -17,7 +17,19 @@ su stack；pwd （用当前用户或root用户）
 ```
 保证devstack的属性 stack:stack
 
+配置pip源
 
+向 ~/.pip/pip.conf中写入： 
+    [global]
+    index-url = http://192.168.1.1/siple
+    
+    [install]
+    trusted-host = 192.168.1.1
+    
+配置iptables
+
+    iptables -A nova-api-INPUT -p tcp --dport 80 -j ACCEPT
+    
 ###debug tips
 
 - pip version
