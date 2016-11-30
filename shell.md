@@ -1,3 +1,20 @@
+###字符串操作
+```
+#!/bin/bash
+STR=singlepair,pairA:pairAA,pairB:pairBB
+for pair in ${STR//,/ };do
+    left=${pair%%:*}
+    right=${pair##*:}
+    echo $left,$right
+    if type configure_${left} >/dev/null 2>&1; then
+        configure_${left} ${right}
+    fi
+    if [[ -z "$left" ]]; then
+        RIGHT=$right
+    fi
+done
+    
+```
 ###Set
 
 服务启动时，设置其runlevel
