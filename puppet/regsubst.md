@@ -45,8 +45,8 @@ notify { $pwde: }
 $hostn = "web1"
 $hostnn = regsubst($hostn, '\d+$', '')  #web
 Or if you prefer to actually call out to Ruby, you can use an inline ERB template:
-$hostname_without_number = inline_template('<%= hostname.gsub(/\d+$/, "") %>')
-
+$hostname_without_number = inline_template('<%= @hostn.gsub(/\d+$/, "") %>') # puppet 3.8.5 need @hostn format
+notify { $hostname_without_number: }
 $x1 = 'des1'
 $x2 = 'des2'
 alert("x1= $x1")
