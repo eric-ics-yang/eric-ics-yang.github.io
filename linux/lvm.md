@@ -32,3 +32,20 @@ Because i extend disk with 10G(+10G), i need to reduce 'dev/centos/root' and rem
     lvreduce -L -11G /dev/centos/root    #Reduce more than 10G to aviod not been reduced from lv
     vgreduce centos /dev/sdb1            #remove from VG 'centos'
     lvextend -l +100%FREE /dev/centos/root  #recover lv to it's origin size
+
+
+###Actions after resize a data disk of VM
+
+```
+//for ext4 filesystem of linux
+umount /dev/vdb
+e2fsck -f /dev/vdb
+resize2fs /dev/vdb
+mount /dev/vdb /data
+
+//for xfs filesystem of linux
+umount /dev/vdb
+xfs_repair /dev/vdb
+mount /dev/vdb /data
+xfs_growfs /data
+```
