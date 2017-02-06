@@ -17,3 +17,33 @@ git --git-dir=./.git --work-tree=../newtree_for_some_commit checkout -b tmp -f m
 git --git-dir=./.git --work-tree=../newtree_for_some_commit branch -d tmp
 
 ```
+
+###git log
+
+Show commit between two tags:
+```
+git log --pretty=oneline tagA...tagB
+git log --oneline tagA...tagB
+
+If you just wanted commits reachable from tagB but not tagA:
+
+git log --pretty=oneline tagA..tagB    
+
+or
+
+git log --pretty=oneline ^tagA tagB
+
+```
+
+Search branch contains a commit:
+```
+git branch -r --contains commitXXX
+
+```
+
+Show log graph
+```
+git log --oneline --decorate --graph --all
+   --all will show all logs other than logs on current branch
+   
+```
