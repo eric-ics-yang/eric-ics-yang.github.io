@@ -47,3 +47,15 @@ git log --oneline --decorate --graph --all
    --all will show all logs other than logs on current branch
    
 ```
+
+If you want to find all commits where commit message contains given word, use
+```
+$ git log --grep=word
+```
+
+how-do-i-blame-a-deleted-line
+
+If you know the contents of the line, this is an ideal use case for:
+```
+git log -S <string> path/to/file
+```
