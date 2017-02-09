@@ -22,5 +22,9 @@ rpm -e --nodeps nss-sysinit && rpm -ivh nss-sysinit-3.19.1-18.el7.x86_64.rpm
 yum remove numactl-libs && yum -y install irqbalance
 rpm -e --nodeps gnutls gnutls-dane gnutls-utils && yum -y install gnutls gnutls-dane gnutls-utils
 
+rpm -e --nodeps device-mapper device-mapper-libs && rpm -ivh device-mapper-1.02.107-5.el7.x86_64.rpm device-mapper-libs-1.02.107-5.el7.x86_64.rpm 
+
+yum remove device-mapper-event-libs device-mapper-multipath-libs device-mapper-persistent-data  # reinstall dependency packages been removed by these three package!
+
 yum check dependencies # check package's dependency after you update packages above.
 ```
