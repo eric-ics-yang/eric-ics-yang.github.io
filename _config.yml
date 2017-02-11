@@ -1,1 +1,12 @@
+auto: true
+
+markdown: rdiscount
+pygments: true
+paginate: 8
+permalink: /:title
+
 theme: jekyll-theme-midnight
+
+title: Xiao Chuan
+url: http://akxc.github.io
+author_info: <a href="http://akxc.github.io/">Xiao Chuan</a>
