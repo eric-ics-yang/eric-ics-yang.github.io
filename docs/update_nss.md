@@ -1,3 +1,12 @@
+---
+layout:     docs
+title:      issuse about update nss
+category: docs
+description: try jekyll
+---
+
+
+
 ###Problem: Update a nss installation with rpm
 
 After **yum update** from CentOS 7.1 to 7.2. nss package version is **nss-3.19.1-19.el7_2.x86_64.rpm**.
