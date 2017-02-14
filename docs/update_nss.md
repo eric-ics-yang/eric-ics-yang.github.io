@@ -23,6 +23,7 @@ A lot of pakcage's version is wrong.
 
 
 ###Solution:
+
 Need to remember nss package affects command **rpm, yum, ssh, scp **!
 After delete a nss package, command **rpm, yum, ssh, scp** all become unuseful.
 You need to extract libnss3.so libnssutil3.so from nss-3.19.1-18.el7.x86_64.rpm nss-util-3.19.1-4.el7_1.x86_64.rpm before delete nss and nss-utils package.
