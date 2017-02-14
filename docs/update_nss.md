@@ -1,10 +1,9 @@
 ---
 layout:     docs
 title:      issuse about update nss
-category: docs
+category:   docs
 description: try jekyll
 ---
-
 
 
 ###Problem: Update a nss installation with rpm
