@@ -17,7 +17,9 @@ Error: Protected multilib versions: gnutls ...
 ...
 
 ```
+
 A lot of pakcage's version is wrong.
+
 
 ###Solution:
 Need to remember nss package affects command **rpm, yum, ssh, scp **!
