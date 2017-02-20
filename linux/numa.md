@@ -102,6 +102,6 @@ Some references from web:
 
 - NUMA架构的CPU -- 你真的用好了么？ [numa linux]
 - Non-uniform Memory Access [numa wikipedia]
-- 
+
   [numa linux]: http://cenalulu.github.io/linux/numa/ 
   [numa wikipedia]: https://en.wikipedia.org/wiki/Non-uniform_memory_access
