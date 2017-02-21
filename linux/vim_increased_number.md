@@ -87,3 +87,8 @@ cat t
 ......
 <vcpupin vcpu='12' cpuset='12' />
 ```
+
+
+####Way 4:
+
+插入模式下，按顺序输入 ctrl-r，=，range(1,100)，回车
