@@ -1,6 +1,38 @@
 ###make a increased number by line in vim
 
 I need to create some lines which contains a sequence of increased number line by line.
+
+####Way 0:
+```sh
+seq -f %1.f 978711100001 978711130000 >num.txt
+```
+####Way 1:
+```sh
+In vim's command mode, input "r !seq 1 12".
+:r !seq 1 10
+cat t
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+```
+####Way 2:
+```sh
+#!/bin/sh
+
+for ((i=100001;i<=130000;i++))
+do
+   echo "978711$i">>/tmp/num.txt
+done
+```
+
+####Way 3:
 - copy lines with same number, eg "1"
 ```sh
 cat t
