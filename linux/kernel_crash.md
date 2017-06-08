@@ -1,6 +1,6 @@
 ### command to crash
 
-    用root权限执行如下命令，可以让kernel crash。
+用root权限执行如下命令，可以让kernel crash。
 ``` shell
 # echo 1 > /proc/sys/kernel/sysrq
 # echo c > /proc/sysrq-trigger
@@ -22,7 +22,8 @@ kernel dump完成后，系统重启，进入到 /var/crash/ 目录下可以看�
 kdump.service 相关的配置文件 /etc/kdump.conf 里面可以修改一些默认的配置，比如dump完成后的动作（默认是reboot）、dump文件存放的方式（本地目录、NFS、scp到另外服务器等）。
 
 
-ref: [1] [2]
+ref: [1] [2] [3]
 
   [1]:https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Kernel_Crash_Dump_Guide/sect-kdump-config-cli.html#sect-kdump-config-cli-default-action
   [2]:http://www.tuicool.com/articles/RjUfE3n
+    [3]: http://unixadminschool.com/blog/2015/07/configuring-kdump-to-troubleshoot-kernel-crashes-hangs-or-reboots-in-rhel5rhel6rhel7/#difference-between-chroot-pivot-root
