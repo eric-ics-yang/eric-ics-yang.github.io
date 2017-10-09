@@ -1,4 +1,8 @@
-### 养生揭秘：醋泡三宝可以吃出长寿
+---
+layout: post
+title:  "养生揭秘：醋泡三宝可以吃出长寿"
+categories: life
+---
 
 http://fashion.ifeng.com/a/20150126/40077578_0.shtml
 2015年01月26日 07:57
