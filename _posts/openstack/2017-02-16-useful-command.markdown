@@ -1,4 +1,11 @@
-###security group：
+---
+layout:     posts
+title:      Useful OpenStack command
+category:   openstack
+description: Commands in OpenStack
+---
+
+### security group：
 
 ```sh
 nova secgroup-add-rule default tcp 22 22 0.0.0.0/0  ---all ssh into vms

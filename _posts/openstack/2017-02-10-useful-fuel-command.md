@@ -1,10 +1,17 @@
-###Download env setting
+---
+layout:     posts
+title:      Useful fuel command
+category:   openstack
+description: aboud fuel env and task graph
+---
+
+### Download env setting
 ```sh
 fuel env --list
 fuel --env ID settings --download
 ```
 
-###Download task graph and render it to png
+### Download task graph and render it to png
 tips from [fuel-docs]
 ```sh
 yum install graphviz
