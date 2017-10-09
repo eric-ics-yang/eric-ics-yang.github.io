@@ -1,13 +1,17 @@
-###String substitute in puppet
+### String substitute in puppet
 
 To replace substr in a string using puppet ,we can use regsubst function.
 
 Docs from [puppet](http://docs.puppetlabs.com/references/latest/function.html#regsubst):
 
 Parameters (in order):
+
         target The string or array of strings to operate on. If an array, the replacement will be performed on each of the elements in the array, and the return value will be an array.
+
         regexp The regular expression matching the target string. If you want it anchored at the start and or end of the string, you must do that with ^ and $ yourself.
+
         replacement Replacement string. Can contain backreferences to what was matched using \0 (whole match), \1 (first set of parentheses), and so on.
+
         flags Optional. String of single letter flags for how the regexp is interpreted:
             E Extended regexps
             I Ignore case in regexps
@@ -18,6 +22,7 @@ Parameters (in order):
             E EUC
             S SJIS
             U UTF-8
+
     Examples
 
 Get the third octet from the node’s IP address:
@@ -55,7 +60,6 @@ $y1 = regsubst($x1, '[12]$', {'1' => 2, '2' => 1})
 $y2 = regsubst($x2, '[12]$', {'1' => 2, '2' => 1})
 alert("y1= $y1")
 alert("y2= $y2")
-
 
 
 ```
