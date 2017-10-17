@@ -1,4 +1,26 @@
-###字符串操作
+---
+layout: post
+title:  "Shell tips"
+categories: linux
+---
+
+### date
+
+```
+查看当前时间
+#date +%s
+
+查看指定时间
+#date -d 2017-01-01 +%s 
+1483200000
+#date -d 20080101 +%s
+1483200000
+
+将时间戳转换成date
+date -d @1416387827 
+```
+### 字符串操作
+
 ```
 #!/bin/bash
 STR=singlepair,pairA:pairAA,pairB:pairBB
@@ -13,9 +35,9 @@ for pair in ${STR//,/ };do
         RIGHT=$right
     fi
 done
-    
 ```
-###Set
+
+### Set
 
 服务启动时，设置其runlevel
 
@@ -27,7 +49,7 @@ done
     echo $#
     for i in $*;do echo $i;done
 
-###getopt/getopts
+### getopt/getopts
 
 处理命令行参数是一个相似而又复杂的事情，为此，C提供了getopt/getopt_long等函数，C++的boost提供了Options库，在shell中，处理此事的是getopts和getopt.
 
@@ -45,6 +67,7 @@ getopts不支持长选项
     ./test.sh --a-long=args --b-long ：长选项
     
 test.sh
+
 ```
 #!/bin/bash
 
@@ -142,7 +165,7 @@ ref: [1]
 
   [1]: http://blog.csdn.net/qzwujiaying/article/details/6371246
 
-###shell变量
+### shell变量
 
 1. $# 传递到脚本的参数个数
 2. $* 以一个单字符串显示所有向脚本传递的参数。与位置变量不同，此选项参数可超过9个
@@ -151,12 +174,7 @@ ref: [1]
 5. $@ 与$#相同，但是使用时加引号，并在引号中返回每个参数
 6. $- 显示shell使用的当前选项，与set命令功能相同
 7. $? 显示最后命令的退出状态。0表示没有错误，其他任何值表明有错误。
-```
-$0 脚本名字
-$1 位置参数 #1
-$2 - $9 位置参数 #2 - #9
-${10} 位置参数 #10
-$# 位置参数的个数 
-$_ 之前命令的最后一个参数
-$! 运行在后台的最后一个作业的进程ID(PID) 
-```
+8. $0 脚本名字
+9. $1 位置参数 #1
+10. $2 - $9 位置参数 #2 - #9
+11. $_ 之前命令的最后一个参数
