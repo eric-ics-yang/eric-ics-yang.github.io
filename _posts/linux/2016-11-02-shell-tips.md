@@ -4,6 +4,20 @@ title:  "Shell tips"
 categories: linux
 ---
 
+### sed
+
+``` shell
+#substitute  IP of neutron.conf
+#transport_url = rabbit://neutron:neutron123@127.0.0.1:5672
+#transport_url = rabbit://neutron:neutron123@localhost:5672
+#local_ip = 127.0.0.2
+neutron_ip=1.2.3.4
+ovs_ip=1.2.3.5
+sed 's/\@.*\:5672/\@' + ovs_ip + '\:5672/' neutron.conf
+sed 's/local_ip\ \=.*/local_ip\ \=' + ovs_ip + '/' openvswitch.ini
+
+```
+
 ### date
 
 ```
