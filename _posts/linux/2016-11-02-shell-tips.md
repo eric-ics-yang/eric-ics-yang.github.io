@@ -32,6 +32,16 @@ sed 's/local_ip\ \=.*/local_ip\ \=' + ovs_ip + '/' openvswitch.ini
 
 将时间戳转换成date
 date -d @1416387827 
+
+设置时间
+date -s 'Thu Jan 11 14:35:50 CST 2018'
+
+设置hardware clock
+hwclock -w   # Set the Hardware Clock to the current System Time
+
+查询Hardware Clock
+hwclock -r
+
 ```
 ### 字符串操作
 
