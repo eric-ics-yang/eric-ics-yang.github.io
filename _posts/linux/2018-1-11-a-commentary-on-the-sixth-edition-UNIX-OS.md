@@ -13,3 +13,21 @@ There seem to be three main approaches  to learning Operating System:
 
 ##### Case study
 "case study", which will study a working operating system in all aspects case by case.
+
+### Introduction
+
+UNIX OS source code which is permanently resident in the main memory during the operation of UNIX has the following major functions:
+- intialisation
+- process management
+- system calls
+- interrupt handling
+- input/output operations
+- file management
+
+Utilities
+- the "shell" (the command language interpreter)
+- "/etc/init" (the terminal configuration controller)
+- a number of file system management programs such as: check du rmdir chmod mkdir sync clri mkfs umount df mount update(many of functions carried out by those programs are regarded as OS funcctions in other compute systems).
+
+
+
