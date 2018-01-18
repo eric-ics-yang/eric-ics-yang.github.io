@@ -40,3 +40,15 @@ You can also control the flag that specifies whether missing documentation files
 See the "Defining Spec File Macros" section later in the chapter for more on using macros.
 
   [Handling error for unpackaged files]:https://docs-old.fedoraproject.org/ro/Fedora_Draft_Documentation/0.1/html/RPM_Guide/ch09s05s07.html
+
+
+### MANIFEST.in
+Some example about include/exclude files:
+```
+prune tests/
+include LICENSE  README.md RELEASE
+#if you have static files to be added, add them with
+...
+recursive-include package1/static *
+
+```
