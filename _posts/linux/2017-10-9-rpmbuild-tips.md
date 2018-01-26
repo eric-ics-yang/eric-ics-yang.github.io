@@ -39,6 +39,14 @@ Import gpg key to verfy installed pkgs.
 
 References:[1],   [2]
 
+### Exclude file from rpm
+
+To exclude file from rpm, "%exclude xxx" should be put after "%files".
+```
+%files
+%exclude %{_sysconfdir}/pam.d/cp
+```
+
   [1]: http://www.rpm.org/max-rpm/ch-rpm-pgp.html
   [2]: https://www.gnupg.org/gph/en/manual.html
 
