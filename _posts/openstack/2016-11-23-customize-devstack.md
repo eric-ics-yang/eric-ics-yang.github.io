@@ -1,4 +1,4 @@
-###Download devstack
+### Download devstack
 
 - 下载项目
 使用有sudo权限的非root用户（无论时CentOS或Debian系列）clone一份devstack的git库下来。
@@ -30,7 +30,7 @@ su stack；pwd （用当前用户或root用户）
 
     iptables -A nova-api-INPUT -p tcp --dport 80 -j ACCEPT
     
-###debug tips
+### debug tips
 
 - pip version
 
