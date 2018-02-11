@@ -11,6 +11,18 @@
 在输入回车，eclipse自动的格式化中，还是发现部分tab没有被替换为spaces。需要更改“Windows——>Preferences——>Java--> Code Style --> Formatter ”, 点击Edit，编辑Indentation 的Generalsettings--> Tab policy为“Spaces only”。也可以 Import导出的settings.
 还需要更改“Windows——>Preferences——>Java--> Code Style -->Code Template”， import导出的配置。
 
+### 文件切换
+
+在函数调用间文件切换
+
+alt + <- | -> 可以在函数调用堆栈间切换。
+
+ctrl + shift + f6 在文件列表间切换（可以调出多个文件需要点击">>"查看的列表）
+
+ctrl + shift + l  查看快捷键列表
+
+alt + shift + r 重命名
+
 ### 最常用的15大Eclipse开发快捷键技巧
 
 [最常用的15大Eclipse开发快捷键技巧]介绍了常用的快捷键。
