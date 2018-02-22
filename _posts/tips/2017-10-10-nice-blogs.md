@@ -13,6 +13,10 @@ Virtio: [virtio]
 
 Red Hat Enterprise Linux Release Dates: [rhel]
 
+基于Linux的实时系统：[l-realtime]
+
+实时Linux架构剖析： [l-realtime-linux-arch]
+
   [smilejay]: http://smilejay.com/
   [openstack]: http://www.chenshake.com/
   [linux]: https://seravo.fi/blog
@@ -20,3 +24,5 @@ Red Hat Enterprise Linux Release Dates: [rhel]
   [virtio]: https://www.linux-kvm.org/page/Virtio
   [erweima]:https://cli.im/deqr
   [rhel]:https://access.redhat.com/articles/3078
+  [l-realtime]:https://www.ibm.com/developerworks/cn/linux/embed/l-realtime/
+  [l-realtime-linux-arch]:https://www.ibm.com/developerworks/cn/linux/l-real-time-linux/
