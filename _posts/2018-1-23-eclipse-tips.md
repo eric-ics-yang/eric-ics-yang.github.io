@@ -23,6 +23,9 @@ ctrl + shift + l  查看快捷键列表
 
 alt + shift + r 重命名
 
+ctrl + l  输入行号即可跳转到指定行
+
+
 ### 最常用的15大Eclipse开发快捷键技巧
 
 [最常用的15大Eclipse开发快捷键技巧]介绍了常用的快捷键。
