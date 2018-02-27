@@ -41,10 +41,22 @@ ar r ../fixed.deb control.tar.gz
 ```
 You should add a changelog entry and change the version number if you modify anything in the package. 
 The infrastructure to manipulate Debian packages assumes that if two packages have the same name and version, they're the same package. 
-Add a suffix to the debian_revision part at the end of the version number; for sorting reasons the suffix should start with ~, e.g. 1.2.3-4.1 becomes 1.2.3-4.1~johnjumper1.
+Add a suffix to the debian_revision part at the end of the version number; for sorting reasons the suffix should start with ~ e.g. 1.2.3-4.1 becomes 1.2.3-4.1~johnjumper1.
 
 Instead of using shell tools, you can use Emacs. 
 The dpkg-dev-el package (which is its own upstream as this is a native Debian package) contains modes to edit .deb files and to edit Debian changelogs. 
 Emacs can be used interactively or scripted.
+
+### extract control scripts from deb
+```
+#show preinst postinst etc. of deb
+dpkg-deb -e xxx.deb ./extract/DEBIAN
+# extrace files of deb
+dpkg-deb -x xxx.deb ./extract
+mkdir build
+# edit control or other file in ./extract
+# build deb from ./extract to ./build
+dpkg-deb -b ./extract ./build
+```
 
   [easily unpack DEB, edit postinst, and repack DEB]:https://unix.stackexchange.com/questions/138188/easily-unpack-deb-edit-postinst-and-repack-deb
