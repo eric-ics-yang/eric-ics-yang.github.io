@@ -17,6 +17,9 @@ Red Hat Enterprise Linux Release Dates: [rhel]
 
 实时Linux架构剖析： [l-realtime-linux-arch]
 
+科普中国： [science] [science_blog]
+
+
   [smilejay]: http://smilejay.com/
   [openstack]: http://www.chenshake.com/
   [linux]: https://seravo.fi/blog
@@ -26,3 +29,5 @@ Red Hat Enterprise Linux Release Dates: [rhel]
   [rhel]:https://access.redhat.com/articles/3078
   [l-realtime]:https://www.ibm.com/developerworks/cn/linux/embed/l-realtime/
   [l-realtime-linux-arch]:https://www.ibm.com/developerworks/cn/linux/l-real-time-linux/
+  [science_blog]:https://p.baidu.com/daily/author?un=科普中国网&ie=utf8/
+  [science]:http://www.kepuchina.cn/
