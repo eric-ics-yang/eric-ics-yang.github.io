@@ -1,7 +1,7 @@
 
 kvm : [smilejay]
 
-openstack: [openstack]
+陈沙克openstack: [openstack]
 
 linux: [linux]
 
@@ -19,6 +19,8 @@ Red Hat Enterprise Linux Release Dates: [rhel]
 
 科普中国： [science] [science_blog]
 
+云计算、OpenStack相关： [liuchao] 
+
 
   [smilejay]: http://smilejay.com/
   [openstack]: http://www.chenshake.com/
@@ -31,3 +33,4 @@ Red Hat Enterprise Linux Release Dates: [rhel]
   [l-realtime-linux-arch]:https://www.ibm.com/developerworks/cn/linux/l-real-time-linux/
   [science_blog]:https://p.baidu.com/daily/author?un=科普中国网&ie=utf8/
   [science]:http://www.kepuchina.cn/
+  [liuchao]:https://www.cnblogs.com/popsuper1982/p/3840340.html
