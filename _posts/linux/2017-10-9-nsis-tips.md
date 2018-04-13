@@ -1,6 +1,27 @@
 NSIS Nullsoft Scriptable Installation System
 =================
-###写文件
+
+### ICO图标
+; MUI Settings
+
+!define MUI_ABORTWARNING
+
+!define MUI_ICON "${NSISDIR}\install.ico"
+
+!define MUI_UNICON "${NSISDIR}\uninstall.ico"
+
+### 安装首页
+
+!define MUI_WELCOMEFINISHPAGE_BITMAP "welcom.bmp"   而默认的NSIS该图的大小为164×314
+
+!define MUI_WELCOMEPAGE_TITLE "first line \r\n second setup"             \r\n为换行标志
+
+!define MUI_WELCOMEPAGE_TEXT "Step by Step \r\n\r\n　　Author"
+
+OutFile "Setup.exe"
+
+
+### 写文件
 ```
     Name "WTEST"
     OutFile "Setup.exe"
@@ -13,10 +34,10 @@ NSIS Nullsoft Scriptable Installation System
     SectionEnd
 ```
 
-###修改商标信息
+### 修改商标信息
 > BrandingText "COMPANY"
 
-###获取绝对路径名称
+### 获取绝对路径名称
 ```
 4.9.3.9 GetFullPathName
 
@@ -42,7 +63,7 @@ ref: [window api][1]
 
   [1]: https://msdn.microsoft.com/en-us/library/windows/desktop/aa364963%28v=vs.85%29.aspx
   
-###变量
+### 变量
 4.2.1 User Variables
 
 $VARNAME
@@ -78,7 +99,7 @@ Expands environment variables in string into the user variable $x. If an environ
 
 ExpandEnvStrings $0 "WINDIR=%WINDIR%$\nTEMP=%TEMP%"
 
-###常量
+### 常量
 4.2.4 Constants Used in Strings
 
 $$
@@ -97,7 +118,7 @@ $\t
 
 Use to represent a tab (\t).
 
-###函数
+### 函数
 4.7.1.1 Function
 
 [function_name]
@@ -145,7 +166,7 @@ Here are two examples of how this might be used:
    NoAbort:
  FunctionEnd
 
-###执行
+### 执行
 4.9.1.2 Exec
 
 command
@@ -175,7 +196,7 @@ ExecWait '"$INSTDIR\someprogram.exe"'
 ExecWait '"$INSTDIR\someprogram.exe"' $0
 DetailPrint "some program returned $0"
 
-###文件操作
+### 文件操作
 
 4.9.5.2 FileOpen
 
@@ -289,7 +310,7 @@ CreateShortCut "$SMPROGRAMS\My Company\My Program.lnk" "$INSTDIR\My Program.exe"
   ALT|CONTROL|SHIFT|F5 "a description"
 
 
-###DLL操作
+### DLL操作
 4.9.3.13 RegDLL
 
 dllfile [entrypoint_name]
@@ -308,7 +329,7 @@ dllfile
 Loads the specified DLL and calls DllUnregisterServer. The error flag is set if an error occurs (i.e. it can't load the DLL, initialize OLE, find the entry point, or the function returned anything other than ERROR_SUCCESS (=0)).
 
 
-###Flow控制
+### Flow控制
 4.9.4.8 IfAbort
 
 label_to_goto_if_abort [label_to_goto_if_no_abort]
@@ -477,7 +498,7 @@ StrCmp $0 "a string" 0 +3
   Goto +2
   DetailPrint '$$0 != "a string"'
 
-###整型运算
+### 整型运算
 4.9.10.2 IntOp
 
 user_var(output) value1 OP [value2]
@@ -505,7 +526,7 @@ IntOp $0 $0 << 2
 IntOp $0 $0 ~
 IntOp $0 $0 & 0xF
 
-###日志管理
+### 日志管理
 4.9.12 Install Logging Instructions
 4.9.12.1 LogSet
 
@@ -535,7 +556,7 @@ DetailPrint "back to work"
 
 
 
-###添加背景音乐（未验证）
+### 添加背景音乐（未验证）
 ```
 Var hmci 
 Function .OnInit 
