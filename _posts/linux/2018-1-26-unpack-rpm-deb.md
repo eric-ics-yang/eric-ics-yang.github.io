@@ -60,3 +60,12 @@ dpkg-deb -b ./extract ./build
 ```
 
   [easily unpack DEB, edit postinst, and repack DEB]:https://unix.stackexchange.com/questions/138188/easily-unpack-deb-edit-postinst-and-repack-deb
+
+### query which package a file belongs to
+```shell
+#on rpm 
+rpm -qf /path/to/command
+
+#on deb
+dpkg -S /path/to/command
+```
