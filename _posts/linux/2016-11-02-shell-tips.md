@@ -4,6 +4,17 @@ title:  "Shell tips"
 categories: linux
 ---
 
+### array
+
+```shell
+arr=("1.2.3.1" "1.2.3.2")
+for ip in ${arr[@]}
+do
+  echo $ip
+  ssh test@$ip "ping www.test.test"
+done
+```
+
 ### sed
 
 ``` shell
