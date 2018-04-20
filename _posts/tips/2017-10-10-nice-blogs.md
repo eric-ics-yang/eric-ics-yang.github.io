@@ -21,6 +21,9 @@ Red Hat Enterprise Linux Release Dates: [rhel]
 
 云计算、OpenStack相关： [liuchao] 
 
+Memory mapping and DMA: [memmgr]
+
+互联网变化：从 1998 年的盖茨听证会，到 2018 年的扎克伯格听证会: [internet]
 
   [smilejay]: http://smilejay.com/
   [openstack]: http://www.chenshake.com/
@@ -34,3 +37,5 @@ Red Hat Enterprise Linux Release Dates: [rhel]
   [science_blog]:https://p.baidu.com/daily/author?un=科普中国网&ie=utf8/
   [science]:http://www.kepuchina.cn/
   [liuchao]:https://www.cnblogs.com/popsuper1982/p/3840340.html
+  [memmgr]: http://static.lwn.net/images/pdf/LDD3/ch15.pdf
+  [internet]:https://baijia.baidu.com/s?id=1598050675049005897
