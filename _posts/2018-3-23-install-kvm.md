@@ -44,3 +44,31 @@ x86_64 indicates a running 64-bit kernel. If you use see i386, i486, i586 or i68
 ```
 
   [check before install]:https://help.ubuntu.com/community/KVM/Installation
+
+
+### create a vm by virt-install 
+
+- create disk
+```
+#qemu-img create -f qcow2 /opt/vdisk.qcow2 20G
+#qemu-img info /opt/vdisk.qcow2
+```
+
+- start VM
+
+```
+#virt-install --name CentOS6.5 --virt-type kvm --ram 1024 --cdrom=/opt/CentOS-6.5-x86_64.iso --disk path=/opt/vdisk.qcow2 --network network=default --graphics vnc,listen=0.0.0.0 --noautoconsole
+
+Starting install...
+Creating domain...                                                                                            |    0 B  00:00:09     
+Domain installation still in progress. You can reconnect to 
+the console to complete the installation process.
+```
+
+Optional you can change "--network bridge=br0" to use br0 as bridge.
+
+```
+virt-install –video=?  #show video devices 
+```
+
+
