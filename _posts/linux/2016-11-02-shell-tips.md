@@ -53,7 +53,27 @@ hwclock -w   # Set the Hardware Clock to the current System Time
 查询Hardware Clock
 hwclock -r
 
+hwclock --debug # 调试读取biso时间
+hwclock - query and set the hardware clock (RTC)  
+  
+Usage: hwclock [function] [options...]  
+这里需要大家特别注意：先是功能后是选项，只用其中一个是没有用的 
+  
+Functions:  
+  -r | --show         read hardware clock and print result  
+  -s | --hctosys      set the system time from the hardware clock 
+  -w | --systohc      set the hardware clock to the current system time 
+       --systz        set the system time based on the current timezone 
+Options:  
+  -u | --utc          the hardware clock is kept in UTC #设置硬件为的UTC时间  
+       --localtime    the hardware clock is kept in local time #设置硬件为本地时间 
+ls -alth /etc/localtime  #查看当前时区信息
+timedatectl  #查看Local time UTC RTC时间等
+
 ```
+[linux比BIOS时差8小时]
+
+  [linux比BIOS时差8小时]:https://blog.csdn.net/misiter/article/details/7767146
 ### 字符串操作
 
 ```
