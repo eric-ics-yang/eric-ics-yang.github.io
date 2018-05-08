@@ -104,3 +104,16 @@ Handle 0x0004, DMI type 4, 42 bytes
 Processor Information
 ```
 
+### query hardware configuration supported by virsh 
+```
+# virsh capabilities
+
+# virsh cpu-models i686
+486
+pentium
+pentium2
+pentium3
+pentiumpro
+coreduo
+
+```
