@@ -4,6 +4,16 @@ title:  "Shell tips"
 categories: linux
 ---
 
+### check a command exist or not 
+```
+system_check=$(type systemctl > /dev/null 2>&1)
+if [ $? = 0 ]; then
+  echo "systemctl exist "
+else
+  echo "systemctl not exist "
+fi
+```
+
 ### bash -e -x
 
 ```
