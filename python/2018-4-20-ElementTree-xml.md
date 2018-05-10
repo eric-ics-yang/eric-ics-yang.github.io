@@ -43,6 +43,28 @@ root.findall("./country/neighbor")
 
 ```
 
+xml:
+```
+<devices>
+  <controller type="usb" index="0" model="ich9-ehci1">
+     <address type ....../>
+  </controller>
+  
+  <controller type="usb" index="1" model="pci-ohci">
+     <address type ....../>
+  </controller>
+</devices>
+```
+update  model="pci-ohci" to model="ehci".
 
+```
+tree = ET.fromstring(xml)
+ctrl=tree.findall("./devices")
+for ct in ctrl:
+  if str(ct.get('model')) == 'pci-ohci':
+    ct.set('model', 'ehci')
+return ET.tostring(tree)
+
+```
 
   [Doc of python Elementtree]:https://docs.python.org/2/library/xml.etree.elementtree.html
