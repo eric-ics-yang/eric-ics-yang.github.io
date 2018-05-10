@@ -4,6 +4,58 @@ title:  "Shell tips"
 categories: linux
 ---
 
+### if directory exist
+
+```
+#!/bin/bash
+DIR='/tmp/abc'
+if [ ! -e $DIR ]
+then
+    mkdir $DIR
+fi
+
+```
+
+```
+# cat little.txt | tr  [a-z] [A-Z]
+VERSION ABC
+# wc -l ten.txt
+10 ten.txt
+
+# pidof sshd
+2165
+# history -c  #clear history of current user 
+# sosreport   # collect diagnostic and configuration information 
+```
+
+### chattr
+```
+# chattr +a test
+# rm test
+rm: cannot remove 'test': Operation not permitted 
+# lsattr test
+-----a----- test
+```
+### setfacl
+```
+# ls -ld /root
+dr-xrwx---+ root root 4096 May 10 2018
+vs
+dr-xrwx---.root root 4096 May 10 2018
+```
+
+"+" means this file has been set ACL.
+
+```
+# getfacl /root
+ #file: root
+ #owner: root
+ #group: root
+ user:: r-x
+ user:testuser:rwx
+ group:: r-x
+
+```
 ### array
 
 ```shell
