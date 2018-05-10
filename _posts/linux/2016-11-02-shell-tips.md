@@ -4,6 +4,15 @@ title:  "Shell tips"
 categories: linux
 ---
 
+### bash -e -x
+
+```
+#!/bin/bash
+set -e # exit if exit code of command is non-zero 
+set -x #debug mode
+
+```
+
 ### if directory exist
 
 ```
