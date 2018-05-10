@@ -4,6 +4,22 @@ title:  "Shell tips"
 categories: linux
 ---
 
+### forkbomb
+```
+:(){ :|:& };:
+```
+It's called a "[forkbomb]". :() defines a function called : with the body of :|:&, meaning "run : and also run : in the background". ; ends the function definition, and : calls your new function, which endlessly spawns new versions of itself until you either hit process limits or the system grinds to a halt. It's a command that effectively freezes any system without good process limits set. Don't try this at home.
+
+```
+FreeBSD:
+sysctl debug.kdb.panic=1
+
+Linux :
+echo c > /proc/sysrq-trigger
+```
+ 
+  [forkbomb]: https://unix.stackexchange.com/questions/66197/how-to-cause-kernel-panic-with-a-single-command
+
 ### check a command exist or not 
 ```
 system_check=$(type systemctl > /dev/null 2>&1)
