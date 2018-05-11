@@ -1,3 +1,42 @@
+### Kernel crash dump on Ubuntu
+
+- Add following to boot command line by [dump]:
+```
+cat /proc/cmdline
+
+BOOT_IMAGE=/vmlinuz-3.2.0-17-server root=/dev/mapper/PreciseS-root ro
+ crashkernel=384M-2G:64M,2G-:128M
+```
+
+- Inspecting the crash dump using crash
+In order to use the generated [crash] dump with crash one needs the vmlinux file which has the debugging information. This is part of the kernel ddeb package which can be found at:
+```
+http://ddebs.ubuntu.com/pool/main/l/linux/
+
+
+sudo tee /etc/apt/sources.list.d/ddebs.list << EOF
+deb http://ddebs.ubuntu.com/ $(lsb_release -cs)          main restricted universe multiverse
+deb http://ddebs.ubuntu.com/ $(lsb_release -cs)-security main restricted universe multiverse
+deb http://ddebs.ubuntu.com/ $(lsb_release -cs)-updates  main restricted universe multiverse
+deb http://ddebs.ubuntu.com/ $(lsb_release -cs)-proposed main restricted universe multiverse
+EOF
+
+sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys ECDCAD72428D7C01
+sudo apt-get update
+sudo apt-get install linux-image-$(uname -r)-dbgsym
+Warning /!\ Be aware that those packages are huge! (~600 MB)
+
+When installed, the debug kernel can be found under /usr/lib/debug/boot/ and crash is started by:
+
+crash <debug kernel> <crash dump> 
+
+```
+
+Unfortunately the tool does not allow to look at a 32bit dump on a 64bit system and the other way round. Also it tends to be quite picky about matching up kernel and dump.
+
+  [dump]:https://help.ubuntu.com/lts/serverguide/kernel-crash-dump.html
+  [crash]:https://wiki.ubuntu.com/Kernel/CrashdumpRecipe
+
 ### Writing booting log of OS to file in qemu
 
 I ended up appending the following([serial]): -append console=ttyS0,38400 -serial file:serial.out
