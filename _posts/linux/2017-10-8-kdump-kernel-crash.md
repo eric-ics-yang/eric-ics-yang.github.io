@@ -1,3 +1,20 @@
+### Writing booting log of OS to file in qemu
+
+I ended up appending the following([serial]): -append console=ttyS0,38400 -serial file:serial.out
+
+  [serial]:https://superuser.com/questions/269228/write-qemu-booting-virtual-machine-output-to-a-file
+
+Redirect to a [file]
+
+If you're using the QEMU virtual machine and want to redirect the serial output to a file, add the following to your QEMU command line:
+```
+-serial file:FILENAME
+```
+
+Replace FILENAME with the name of a file, into which the debug output shall be written.
+
+  [file]:http://www.reactos.org/wiki/QEMU#Redirect_to_a_file
+
 ### command to crash
 
 用root权限执行如下命令，可以让kernel crash。
