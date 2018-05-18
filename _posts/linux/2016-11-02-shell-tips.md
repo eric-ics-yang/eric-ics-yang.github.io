@@ -114,6 +114,17 @@ ovs_ip=1.2.3.5
 sed 's/\@.*\:5672/\@' + ovs_ip + '\:5672/' neutron.conf
 sed 's/local_ip\ \=.*/local_ip\ \=' + ovs_ip + '/' openvswitch.ini
 
+#write string to a file using sed only
+------sample.txt
+#
+# sample
+
+[general]
+# hello = 2018
+------
+
+writeConf = "sed -i -e '1s/.*//' -e '2,$d' -e '1ifirstLine=FIRST\\nsecondLine=SECOND' sample.txt"
+
 ```
 
 ### date
