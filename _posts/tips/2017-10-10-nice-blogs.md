@@ -29,6 +29,8 @@ Memory mapping and DMA: [memmgr]
 
 安全博客：blog of acunetix [acunetix_blog]
 
+OpenStack superuser  ： [superuser]
+
 
   [smilejay]: http://smilejay.com/
   [openstack]: http://www.chenshake.com/
@@ -46,3 +48,4 @@ Memory mapping and DMA: [memmgr]
   [internet]:https://baijia.baidu.com/s?id=1598050675049005897
   [scanner]: https://www.acunetix.com/vulnerability-scanner/
   [acunetix_blog]: https://www.acunetix.com/blog
+  [superuser]:https://superuser.openstack.org/
