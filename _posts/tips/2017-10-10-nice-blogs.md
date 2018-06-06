@@ -31,6 +31,9 @@ Memory mapping and DMA: [memmgr]
 
 OpenStack superuser  ： [superuser]
 
+Windows 2008 server memory limits: [memory_limits_2k8]
+
+Windows CPU processors : [windows_processors]  [wiki_2k8]
 
   [smilejay]: http://smilejay.com/
   [openstack]: http://www.chenshake.com/
@@ -49,3 +52,7 @@ OpenStack superuser  ： [superuser]
   [scanner]: https://www.acunetix.com/vulnerability-scanner/
   [acunetix_blog]: https://www.acunetix.com/blog
   [superuser]:https://superuser.openstack.org/
+  [memory_limits_2k8]:https://msdn.microsoft.com/en-us/library/aa366778.aspx#physical_memory_limits_windows_server_2008
+  [windows_processors]:https://blogs.technet.microsoft.com/matthts/2012/10/13/windows-server-sockets-logical-processors-symmetric-multi-threading/
+  [wiki_2k8]:https://en.wikipedia.org/wiki/Windows_Server_2008
+
