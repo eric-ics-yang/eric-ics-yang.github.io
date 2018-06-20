@@ -4,6 +4,12 @@ title:  "Shell tips"
 categories: linux
 ---
 
+### for in command line
+```
+$ for i in [nameA nameB lurenC]; do mkdir $i; done
+```
+
+
 ### forkbomb
 ```
 :(){ :|:& };:
