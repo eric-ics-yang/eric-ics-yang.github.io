@@ -69,3 +69,8 @@ rpm -qf /path/to/command
 #on deb
 dpkg -S /path/to/command
 ```
+
+### query files contained by package 
+```shell 
+ rpm -q --filesbypkg python-neutron-lib
+```
