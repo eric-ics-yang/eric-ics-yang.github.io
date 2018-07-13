@@ -41,6 +41,12 @@ Windows Driver Kit (WDK): [wdk]
 
 Port mirroring with linux bridge: [portmirror]
 
+内核漏洞安全： [nist]
+osv :[osv]
+clusterlabs:[clusterlabs]
+搭建iscsi服务器相关 :[iscsi1] [iscsi2]
+
+
 
   [smilejay]: http://smilejay.com/
   [openstack]: http://www.chenshake.com/
@@ -65,4 +71,10 @@ Port mirroring with linux bridge: [portmirror]
   [seas]: https://www.seas.harvard.edu/
   [wdk]:https://docs.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk
   [portmirror]: https://backreference.org/2014/06/17/port-mirroring-with-linux-bridges/
+  [nist]: https://www.nist.org/
+  [osv]: http://osv.io/getting-started/
+  [clusterlabs]: www.clusterlabs.org
+  [iscsi1]: https://blogs.mindspew-age.com/2012/04/05/adventures-in-high-availability-ha-iscsi-with-drbd-iscsi-and-pacemaker/
+  [iscsi2]: https://www.cnblogs.com/wuchanming/p/4019660.html
+
 
