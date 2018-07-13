@@ -49,6 +49,8 @@ clusterlabs:[clusterlabs]
 
 搭建iscsi服务器相关 :[iscsi1] [iscsi2]
 
+Get started with the Octavia Ingress Controller for Kubernetes :[octavia_kubernetes]
+
 
 
   [smilejay]: http://smilejay.com/
@@ -79,5 +81,6 @@ clusterlabs:[clusterlabs]
   [clusterlabs]: www.clusterlabs.org
   [iscsi1]: https://blogs.mindspew-age.com/2012/04/05/adventures-in-high-availability-ha-iscsi-with-drbd-iscsi-and-pacemaker/
   [iscsi2]: https://www.cnblogs.com/wuchanming/p/4019660.html
+  [octavia_kubernetes]: https://superuser.openstack.org/articles/guide-octavia-ingress-controller-for-kubernetes/
 
 
