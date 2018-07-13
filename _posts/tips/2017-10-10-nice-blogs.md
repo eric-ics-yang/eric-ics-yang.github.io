@@ -35,6 +35,13 @@ Windows 2008 server memory limits: [memory_limits_2k8]
 
 Windows CPU processors : [windows_processors]  [wiki_2k8]
 
+斯坦福应用科学工程学院： [seas]
+
+Windows Driver Kit (WDK): [wdk]
+
+Port mirroring with linux bridge: [portmirror]
+
+
   [smilejay]: http://smilejay.com/
   [openstack]: http://www.chenshake.com/
   [linux]: https://seravo.fi/blog
@@ -55,4 +62,7 @@ Windows CPU processors : [windows_processors]  [wiki_2k8]
   [memory_limits_2k8]:https://msdn.microsoft.com/en-us/library/aa366778.aspx#physical_memory_limits_windows_server_2008
   [windows_processors]:https://blogs.technet.microsoft.com/matthts/2012/10/13/windows-server-sockets-logical-processors-symmetric-multi-threading/
   [wiki_2k8]:https://en.wikipedia.org/wiki/Windows_Server_2008
+  [seas]: https://www.seas.harvard.edu/
+  [wdk]:https://docs.microsoft.com/en-us/windows-hardware/drivers/download-the-wdk
+  [portmirror]: https://backreference.org/2014/06/17/port-mirroring-with-linux-bridges/
 
