@@ -51,6 +51,9 @@ clusterlabs:[clusterlabs]
 
 Get started with the Octavia Ingress Controller for Kubernetes :[octavia_kubernetes]
 
+Effective go : [effective_go]
+
+Documents of go : [godocs]
 
 
   [smilejay]: http://smilejay.com/
@@ -82,5 +85,7 @@ Get started with the Octavia Ingress Controller for Kubernetes :[octavia_kuberne
   [iscsi1]: https://blogs.mindspew-age.com/2012/04/05/adventures-in-high-availability-ha-iscsi-with-drbd-iscsi-and-pacemaker/
   [iscsi2]: https://www.cnblogs.com/wuchanming/p/4019660.html
   [octavia_kubernetes]: https://superuser.openstack.org/articles/guide-octavia-ingress-controller-for-kubernetes/
+  [effective_go]: http://docs.studygolang.com/doc/effective_go.html
+  [godocs]:http://docs.studygolang.com/doc/
 
 
