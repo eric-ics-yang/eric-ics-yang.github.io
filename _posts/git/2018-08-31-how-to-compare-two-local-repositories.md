@@ -13,5 +13,4 @@ In the obsoleted Cogito you would nearly exactly the same
 
 >GIT_ALTERNATE_OBJECT_DIRECTORIES=../kubernetes.orgin/.git/objects git diff-tree --patch $(GIT_DIR=../kubernetes.orgin/.git git rev-parse --verify HEAD) HEAD
 
-From [tips].
-  [tips]:https://git.wiki.kernel.org/index.php/GitTips
+From [tips](https://git.wiki.kernel.org/index.php/GitTips).
