@@ -5,6 +5,8 @@ categories: linux
 ---
 
 ### function
+
+```shell
 check_file() {
     check_file=$1
     if [ -f $check_file ]; then
@@ -23,17 +25,21 @@ check_return(){
 }
 
 checkfile "/tmp/test.log"
+```
 
 ### and
 
+```shell
 if [ -n "$name" ] && [ -n "$address" ];  then
     echo "name is $name, address is $address"
 else
     echo "$name or $address is empty"
 fi
-
+```
 
 ### Usage
+
+```shell
 if [ $# -ne 6 ]; then
 echo -e "
 Usage:
@@ -43,7 +49,7 @@ Usage:
 "
 exit 1
 fi
-
+```
 
 ### for in command line
 ```
