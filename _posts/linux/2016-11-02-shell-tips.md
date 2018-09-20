@@ -4,6 +4,47 @@ title:  "Shell tips"
 categories: linux
 ---
 
+### function
+check_file() {
+    check_file=$1
+    if [ -f $check_file ]; then
+        echo "file $check_file found"
+    else
+        echo "$check_file is not found"
+        exit 1
+    fi
+}
+
+check_return(){
+  if [ $? -ne 0 ]; then
+    echo "something wrong happened"
+    exit 1
+  fi
+}
+
+checkfile "/tmp/test.log"
+
+### and
+
+if [ -n "$name" ] && [ -n "$address" ];  then
+    echo "name is $name, address is $address"
+else
+    echo "$name or $address is empty"
+fi
+
+
+### Usage
+if [ $# -ne 6 ]; then
+echo -e "
+Usage:
+    usage.sh arg1 arg2 arg3 arg11 arg22 arg33
+
+    eg: 'usage.sh arg1 \"\" arg3 arg11 \"\" arg33'
+"
+exit 1
+fi
+
+
 ### for in command line
 ```
 $ for i in [nameA nameB lurenC]; do mkdir $i; done
