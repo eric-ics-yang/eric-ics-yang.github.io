@@ -4,6 +4,12 @@ title:  "Shell tips"
 categories: linux
 ---
 
+### groupadd useradd
+```shell
+#groupadd -g 501 mysql     #add a group mysql which has gid of '501'
+#useradd mysql -g 501 -u 501  #add a user with gid 501 and gid 501
+```
+
 ### function
 
 ```shell
