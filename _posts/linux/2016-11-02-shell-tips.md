@@ -178,8 +178,23 @@ sed 's/local_ip\ \=.*/local_ip\ \=' + ovs_ip + '/' openvswitch.ini
 
 writeConf = "sed -i -e '1s/.*//' -e '2,$d' -e '1ifirstLine=FIRST\\nsecondLine=SECOND' sample.txt"
 
-```
 
+$sed '/$/a\\n' test.log   #add a newline on the end of every line
+$sed '$a\THE END OF FILE' test.log    #add 'THE END OF FILE' at the end of file. Must use "'" instead of """.
+                                      # 'a' means append, 'i' means insert.
+
+```
+### cat
+
+```shell
+cat <<EOF >>test.log
+write 
+these
+lines
+to
+file
+EOF
+```
 ### date
 
 ```
