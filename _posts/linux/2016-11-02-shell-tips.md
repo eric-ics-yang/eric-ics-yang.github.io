@@ -242,6 +242,11 @@ Options:
 ls -alth /etc/localtime  #查看当前时区信息
 timedatectl  #查看Local time UTC RTC时间等
 
+- Update timezone of localtime 
+ll /etc/localtime
+rm /etc/localtime
+ln -s /usr/share/zoneinfo/Asia/Shanghai  /etc/localtime
+
 ```
 [linux比BIOS时差8小时]
 
