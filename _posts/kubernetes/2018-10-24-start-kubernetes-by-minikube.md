@@ -135,3 +135,16 @@ kubernetes-dashboard-5498ccf677-xdhkc   0/1       Error         1          8s
 storage-provisioner                     1/1       Running       27         40d
 
 ```
+
+### tag k8s.gcr.io
+
+```shell
+docker tag docker.io/akxc/docker-library:k8s-dns-dnsmasq-nanny-amd64_1.14.8 k8s.gcr.io/k8s-dns-dnsmasq-nanny-amd64:1.14.8
+docker tag docker.io/akxc/docker-library:k8s-dns-sidecar-amd64_1.14.8  k8s.gcr.io/k8s-dns-sidecar-amd64:1.14.8
+docker tag docker.io/akxc/docker-library:kube-addon-manager_v8.6   k8s.gcr.io/kube-addon-manager:v8.6
+docker tag docker.io/akxc/docker-library:kubernetes-dashboard-amd64_v1.8.1    k8s.gcr.io/kubernetes-dashboard-amd64:v1.8.1
+docker tag docker.io/akxc/docker-library:storage-provisioner_v1.8.1     gcr.io/k8s-minikube/storage-provisioner:v1.8.1
+docker tag akxc/docker-library:pause-amd64_3.1 k8s.gcr.io/pause-amd64:3.1
+docker tag akxc/docker-library:kube-proxy-amd64_v1.10.0 k8s.gcr.io/kube-proxy-amd64:v1.10.0
+docker tag docker.io/akxc/docker-library:k8s-dns-kube-dns-amd64_1.14.8 k8s.gcr.io/k8s-dns-kube-dns-amd64:1.14.8
+```
