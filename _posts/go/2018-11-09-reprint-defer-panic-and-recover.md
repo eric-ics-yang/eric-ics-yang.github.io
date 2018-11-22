@@ -2,6 +2,8 @@
 ### Defer, Panic, and Recover
 From  The Go [Blog](https://blog.golang.org/defer-panic-and-recover) 4 August 2010
 
+A nice way to see docs from golang is run " godoc -http=:6060", then open "http://127.0.0.1:6060/doc/" or "http://127.0.0.1:6060/doc/".
+
 Go has the usual mechanisms for control flow: if, for, switch, goto. It also has the go statement to run code in a separate goroutine. Here I'd like to discuss some of the less common ones: defer, panic, and recover.
 A defer statement pushes a function call onto a list. The list of saved calls is executed after the surrounding function returns. Defer is commonly used to simplify functions that perform various clean-up actions.
 For example, let's look at a function that opens two files and copies the contents of one file to the other:
