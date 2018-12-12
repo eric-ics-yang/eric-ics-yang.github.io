@@ -1,3 +1,13 @@
+### Objects and instances
+```
+$ kubectl delete deployments/my-nginx services/my-nginx-svc
+
+$ kubectl delete deployment,services -l app=nginx
+deployment.apps "my-nginx" deleted
+service "my-nginx-svc" deleted
+
+```
+
 ### pod
 
 ```
