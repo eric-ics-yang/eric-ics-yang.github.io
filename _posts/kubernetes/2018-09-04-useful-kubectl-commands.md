@@ -43,3 +43,25 @@ kubectl get nodes --show-labels
 
 
 ```
+
+### rolling update a deployment 
+
+- Note: 
+> A Deployment’s rollout is triggered if and only if the Deployment’s pod template (that is, .spec.template) is changed, for example if the labels or container images of the template are updated. Other updates, such as scaling the Deployment, do not trigger a rollout.
+
+``` shell 
+kubectl set image deploy frontend php-redis=gcr.io/google-samples/gb-frontend:v3 --record
+
+kubectl get rs -w
+kubectl rollout pause deploy/frontend
+kubectl rollout resume deployment/review-demo --namespace=scm
+kubectl rollout undo deploy frontend --to-revision=7
+
+// deployment/depName
+kubectl rollout status deployment/review-demo  --namespace=scm
+kubectl describe deployment/review-demo  --namespace=scm
+// deployment depName
+kubectl rollout status deployments review-demo --namespace=scm
+kubectl describe deployments review-demo  --namespace=scm
+
+```
