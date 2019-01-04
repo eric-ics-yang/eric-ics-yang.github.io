@@ -75,3 +75,28 @@ kubectl rollout status deployments review-demo --namespace=scm
 kubectl describe deployments review-demo  --namespace=scm
 
 ```
+
+### some commands about minikube and ip
+``` shell
+minikube start --vm-driver=none
+minikube dashboard --url
+cat /proc/sys/net/ipv4/ip_forward
+vim /etc/sysctl.conf
+sysctl -p
+iptables -t nat -A POSTROUTING -j MASQUERADE
+ip a | grep 192
+cat .kube/config
+ip  link show
+ip link show if5
+ip link show docker0
+brctl show
+iptables -L
+brctl show
+docker network ls
+brctl show docker0
+ping 172.17.0.2
+docker network --help
+docker network inspect docker0
+brctl showmacs docker0
+
+```
