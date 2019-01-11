@@ -64,6 +64,10 @@ Documents of go : [godocs]
 [BuleGreen Deployments And A/B Testing And Canary Releases](http://blog.christianposta.com/deploy/blue-green-deployments-a-b-testing-and-canary-releases/)
 
 [etcd：从应用场景到实现原理的全方位解读--孙健波](https://www.infoq.cn/article/etcd-interpretation-application-scenario-implement-principle)
+
+[ZooKeeper典型应用场景一览] (https://yq.aliyun.com/articles/85262)
+
+
   [smilejay]: http://smilejay.com/
   [openstack]: http://www.chenshake.com/
   [linux]: https://seravo.fi/blog
