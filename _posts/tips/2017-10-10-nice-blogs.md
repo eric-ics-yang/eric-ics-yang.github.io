@@ -67,6 +67,7 @@ Documents of go : [godocs]
 
 [ZooKeeper典型应用场景一览](https://yq.aliyun.com/articles/85262)
 
+[ZooKeeper Recipes and Solutions](https://zookeeper.apache.org/doc/r3.4.4/recipes.html)
 
   [smilejay]: http://smilejay.com/
   [openstack]: http://www.chenshake.com/
@@ -99,5 +100,7 @@ Documents of go : [godocs]
   [octavia_kubernetes]: https://superuser.openstack.org/articles/guide-octavia-ingress-controller-for-kubernetes/
   [effective_go]: http://docs.studygolang.com/doc/effective_go.html
   [godocs]:http://docs.studygolang.com/doc/
+
+[Paxos](https://en.wikipedia.org/wiki/Paxos_(computer_science))
 
 
