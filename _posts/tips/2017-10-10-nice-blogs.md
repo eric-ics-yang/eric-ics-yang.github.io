@@ -59,6 +59,10 @@ Documents of go : [godocs]
 
 [Tutorials of kubernetes](https://kubernetes.io/docs/tutorials/)
 
+[BlueGreen Deployment](https://martinfowler.com/bliki/BlueGreenDeployment.html)
+
+[BuleGreen Deployments And A/B Testing And Canary Releases](http://blog.christianposta.com/deploy/blue-green-deployments-a-b-testing-and-canary-releases/)
+
   [smilejay]: http://smilejay.com/
   [openstack]: http://www.chenshake.com/
   [linux]: https://seravo.fi/blog
