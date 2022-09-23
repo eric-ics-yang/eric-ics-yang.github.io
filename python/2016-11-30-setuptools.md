@@ -1,3 +1,11 @@
+---
+layout: post
+title:  "Build wheel"
+date:   2016-11-30 15:09:10 +0800
+categories: rpm
+tags: python
+---
+
 ### Build wheel
 
 安装python-setuptools, python-wheel之后，执行： 
