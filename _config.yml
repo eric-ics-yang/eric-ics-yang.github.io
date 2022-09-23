@@ -25,12 +25,11 @@ github_username:  eric-ics-yang
 # Build settings
 markdown: kramdown
 theme: minima
-gems:
+plugins:
   - jekyll-feed
+  - jekyll-paginate
 paginate: 15
 paginate_path: "/blog/page:num/"
 exclude:
   - Gemfile
   - Gemfile.lock
-plugins:
-  - jekyll-paginate
